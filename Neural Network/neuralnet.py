@@ -125,7 +125,6 @@ def predict(x, alpha, beta, M, D):
     return label
 
 
-
 def main(): 
     x_train, y_train = readFile(train_in)
     x_test, y_test = readFile(test_in)
@@ -159,7 +158,7 @@ def main():
                     % (i, J_train_mean[i-1], i, J_test_mean[i-1]))
         g.write('error(train): %f\nerror(test): %f'
                     % (error_train/len(x_train), error_test/len(x_test)))
-    
+   
 
 import sys 
 
